@@ -6,6 +6,7 @@ import {
 } from 'lucide-react';
 import { BOOK_INFO, CHAPTERS } from '../data/bookData';
 import { Chapter, ReadingSettings, Bookmark as BookmarkType } from '../types';
+import { AdBanner } from './AdBanner';
 
 interface BookReaderProps {
   initialChapterId?: string;
@@ -359,6 +360,9 @@ export const BookReader: React.FC<BookReaderProps> = ({
               );
             })}
           </div>
+
+          {/* Ad Banner inside reader */}
+          <AdBanner className="my-8" />
 
           {/* Bottom Chapter Navigation Bar */}
           <div className="mt-12 pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4">

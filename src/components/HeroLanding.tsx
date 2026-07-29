@@ -2,6 +2,7 @@ import React from 'react';
 import { Download, BookOpen, Smartphone, ShieldCheck, Sparkles, CheckCircle2, ArrowRight, Brain, HeartPulse, Compass, Zap, Flame, Eye } from 'lucide-react';
 import { BOOK_INFO, CHAPTERS } from '../data/bookData';
 import { Chapter } from '../types';
+import { AdBanner } from './AdBanner';
 
 interface HeroLandingProps {
   onStartReading: (chapterId?: string) => void;
@@ -203,6 +204,11 @@ export const HeroLanding: React.FC<HeroLandingProps> = ({
           </div>
         </div>
       </section>
+
+      {/* Ad Banner Section */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
+        <AdBanner />
+      </div>
 
       {/* Chapters Directory Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">

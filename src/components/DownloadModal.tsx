@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import { Download, FileText, BookOpen, CheckCircle, Sparkles, X, Check, Globe } from 'lucide-react';
+import { Download, FileText, BookOpen, CheckCircle, Sparkles, X, Check, Globe, ExternalLink } from 'lucide-react';
 import { BOOK_INFO } from '../data/bookData';
 import { downloadBookInFormat } from '../utils/downloadBook';
 import { DownloadFormat } from '../types';
+import { DIRECT_AD_LINK } from './AdBanner';
 
 interface DownloadModalProps {
   isOpen: boolean;
@@ -203,6 +204,18 @@ export const DownloadModal: React.FC<DownloadModalProps> = ({ isOpen, onClose })
         <p className="text-[10px] text-white/30 text-center uppercase tracking-widest mt-3">
           Libre de marcas de agua • Acceso inmediato e ilimitado
         </p>
+
+        <div className="mt-4 pt-3 border-t border-white/5 text-center">
+          <a
+            href={DIRECT_AD_LINK}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 text-xs text-amber-400 hover:text-amber-300 font-semibold uppercase tracking-wider transition-colors"
+          >
+            <span>Ver enlace patrocinado del patrocinador</span>
+            <ExternalLink className="w-3.5 h-3.5" />
+          </a>
+        </div>
       </div>
     </div>
   );
