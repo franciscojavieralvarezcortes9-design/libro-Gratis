@@ -1,0 +1,6 @@
+{
+  "name": "El Sistema Invisible - Libro & Lector Online",
+  "description": "Sitio web oficial para descargar y leer gratis online el libro 'El Sistema Invisible: Por qué haces lo que haces, sientes lo que sientes y decides lo que decides'. Incluye lector integrado para lectura fluida en móviles.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
